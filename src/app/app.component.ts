@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  selectedOption;
+  options: Array<object>;
+
+  selectedGender;
+
+  constructor() {
+    this.options = [
+      { id: 1, name: 'Carlo'},
+      { id: 2, name: 'Jorge'},
+      { id: 3, name: 'Peter'},
+    ];
+  }
+
 }

@@ -18,3 +18,24 @@
   </li>
 </ul>
 
+<!--
+<div class="ui container">
+    <sui-select [(ngModel)]="selectedGender" placeholder="Gender">
+        <sui-select-option value="Male"></sui-select-option>
+        <sui-select-option value="Female"></sui-select-option>
+    </sui-select>
+</div>
+-->
+
+<div class="ui segments">
+    <div class="ui segment">
+        <button class="ui primary button" (click)="collapse = !collapse">
+            Toggle Collapse
+        </button>
+    </div>
+    <div class="ui segment">
+        <div [suiCollapse]="collapse">
+            <p>X</p>
+        </div>
+    </div>
+</div>
